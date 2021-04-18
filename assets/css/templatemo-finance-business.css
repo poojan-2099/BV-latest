@@ -290,7 +290,7 @@ header .navbar {
 	outline: none;
 }
 .navbar .navbar-brand h2 {
-	color: #fff;
+	 color: var(--colorAll);
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: 700;
@@ -1079,7 +1079,7 @@ footer .contact-form button.filled-button {
 footer .contact-form button.filled-button:hover {
 	background-color: #fff;
 	color: var(--colorAll);
-;
+
 }
 
 

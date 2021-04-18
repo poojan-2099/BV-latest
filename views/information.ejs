@@ -1,63 +1,181 @@
-<head>
-	<link rel="stylesheet" href="/css/model.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
-  </head>
-  <body>
-    <div class="bdypart">
-    <div class="container-small">
-    <div class="wrapper">
-      <div class="cardmain">
-        <h1>
-          <span class="enclosed">Credit</span>Score
-        </h1>
-      </div>
-    </div>
-  </div>
-  <div class="container_main">
-    <div class="card">
-      <h3 class="title">What is it..??</h3>
-      <div class="bar">
-        <div class="emptybar"> </div>
-        <ul style="list-style: circle; margin-left: 10px;">
-          <li class="textof">A Credit Score defines the<b>Credit Worthiness</b> of a person. A Credit Score is an individual's credit payment history across loan types and credit insitutions like Banks and NBFCs over a period time. These scores may vary from 300-900 depending on the scale and the bureu.</li>
-          <li class="textof">We believe a good score is somewhere between <b>720-900</b>,which might never creae any hassle in getting yours loans.
+ <head>
+    <title>Credit Score</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d4784414e9.js" crossorigin="anonymous"></script>
+ </head>
+ <style>
+          section {
+            padding: 60px 0;
+            overflow: hidden;
+            position: relative;
+          }
+
+          .section-title {
+            text-align: center;
+            padding-bottom: 30px;
+            position: relative;
+          }
+
+          .section-title h2 {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            position: relative;
+          }
+
+          .section-title h2::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #e03a3c;
+            bottom: 0;
+            left: calc(50% - 25px);
+          }
+
+          .section-title p {
+            margin-bottom: 0;
+          }
+
+          .section-bg {
+            padding: 120px 0;
+            color: #fff;
+          }
+
+          .section-bg:before {
+            content: "";
+            background: #1b1b1b;
+            position: absolute;
+            bottom: 60px;
+            top: 60px;
+            left: 0;
+            right: 0;
+            transform: skewY(-3deg);
+          }
+
+           .services .icon-box {
+              margin-bottom: 20px;
+              padding: 30px;
+              border-radius: 6px;
+              background: #252525;
+              transition: 0.3s;
+            }
+
+            .services .icon-box:hover {
+              background: #2b2b2b;
+            }
+
+            .services .icon-box i {
+              float: left;
+              color: #ffb226;
+              font-size: 40px;
+            }
+        
+            .services .icon-box h4 {
+              margin-left: 70px;
+              font-weight: 700;
+              margin-bottom: 15px;
+              font-size: 18px;
+            }
+
+            .services .icon-box h4 a {
+              color: #fff;
+              transition: 0.3s;
+            }
+
+            .services .icon-box h4 a:hover {
+              text-decoration: underline;
+            }
+
+            .services .icon-box .icon-box:hover h4 a {
+              color: #f59012;
+            }
+
+            .services .icon-box p {
+              margin-left: 70px;
+              line-height: 24px;
+              font-size: 14px;
+            }
+
+            a.filled-button {
+                background-color: #f59012;
+                color: #fff;
+                font-size: 17px;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 12px 30px;
+                border-radius: 30px;
+                display: inline-block;
+                transition: all 0.3s;
+            }
+            li{
+              font-size: large;
+            }
+ </style>
+ <body>
+    <section id="services" class="services section-bg ">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Credit Score</h2>
+          <li>A Credit Score defines the <b>Credit Worthiness</b> of a person. A Credit Score is an individual's credit payment history across loan types and credit institutions like Banks & NBFcs over a period of time. These scores vary from <b>300-900</b> depending on the scale and the bureue.</li>
+          <li>
+            Our experts believe a good score is somewhere between <b>720-900</b>,which might never create any hassle in getting your loans.
           </li>
+          <li>
+            We helps you to improve your Credit Scores and also helps you to clear your disputes in your credit report. We help consumers to maintain a healthy credit score.
+          </li>
+        </div>
 
-        </ul>
-        <div class="filledbar"></div>
-      </div>
-    </div>
-    <div class="card">
-      <h3 class="title">4 Major factors that affects your score</h3>
-      <div class="bar">
-        <div class="emptybar"></div>
-        <div class="filledbar"></div>
-        <ul style="list-style: circle; margin-left: 10px;">
-          <li class="textof">Payment History</li>
-	  <li class="textof">Credit Mix</li>
-	  <li class="textof">High Credit Utilization</li>
-	  <li class="textof">Multiple Enquiries</li>
+        <div class="section-title">
+            <h3>4 Major factors that Affects your Credit Score</h3>
+        </div>
 
-        </ul>
-      </div> 
-    </div>
-    <div class="card">
-      <h3 class="title"><b>HOW?</b>Wondering How you can get an excellent score??</h3>
-      <div class="bar">
-        <div class="emptybar"></div>
-        <div class="filledbar"></div>
-        <ul style="list-style: circle; margin-left: 10px;">
-          <li class="textof">Contact our Team of Experts</li>
+
+        <div class="row">
           
-        </ul>
+          <div class="col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-receipt"></i>
+              <h4><a href="#">Payment History</a></h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-hand-holding-usd"></i>
+              <h4><a href="#">Credit Mix</a></h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-chart-line"></i>
+              <h4><a href="#">High Credit Utilization</a></h4>
+              
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-phone-alt"></i>
+              <h4>Multiple Enquiries</h4>
+            
+            </div>
+          </div>
+        </div>
       </div>
-   
-    </div>
-    
-    
-  </div>
-  <div class="container d-flex justify-content-center"  style="margin-top: 20px;" >
-    <a href="https://api.whatsapp.com/send?phone=918347064889" target="_blank" class="filled-button last-btn"><i class="fa fa-whatsapp" aria-hidden="true"></i>Contact Us</a>
-  </div>
-</div>
-  </body>
+
+    </section>
+        <div class="container d-flex justify-content-center">
+          <a href="https://api.whatsapp.com/send?phone=918347064889" target="_blank" class="filled-button last-btn"><i class="fa fa-whatsapp" aria-hidden="true"></i>Contact Us</a>
+        </div>
+ 
+ </body>
